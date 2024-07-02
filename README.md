@@ -3,6 +3,14 @@
 ## Updates
 - I will add pictures when I have my Switch V1
 - I try to adapt the text as accurately as possible
+- 
+# What you need
+
+- Nintendo Switch V1
+- microSD card (at least 64GB is recommended)
+- RCM Jig
+- USB-C cable
+- PC/laptop (or similar to edit data on an SD card)
 
 # SD card preparation
 
@@ -41,14 +49,6 @@ To format the SD card to FAT32 in MacOS, follow these steps:
 2. unmount the SD card first with `diskutil unmountDisk /dev/disk1` (replace `disk1` with the actual name of the SD card).
 3. then execute the command to format the SD card to FAT32: `diskutil eraseDisk FAT32 namedersdkarte MBRFormat /dev/disk1`.
 
-
-# What you need
-
-- Nintendo Switch V1
-- microSD card (at least 64GB is recommended)
-- RCM Jig
-- USB-C cable
-- PC/laptop (or similar to edit data on an SD card)
 
 # Check serial number
 
