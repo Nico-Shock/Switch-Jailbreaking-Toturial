@@ -71,7 +71,27 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
    2. connect the Switch in RCM mode to your PC via the USB-C cable
    3. open TegraRcmGUI and select the Hekate payload file (it should be a ".bin" file).
 
-# 
+# Configure Hekate
+
+## Backup the NAND
+
+1. close the launch window at the top right after you have set the date
+2. then go to Tools at the top right.
+3. then select `Backup eMMC`.
+4. if you want, you can turn on the option with `SD emuMMC Raw Partition` (I leave it off here).
+5. then select the option on the left `eMMC BOOT0 & BOOT1` and wait until it is ready.
+6. then select 'eMMC RAW GPP' underneath and wait for it to finish (this will take a different amount of time depending on the amount of data on your system).
+7. then turn off the switch and connect the SD card to your PC.
+8. copy all the backed up data into a folder (there should be 15 rawnand.bin files on the SD card and the BOOT0 and BOOT1 files).
+9. then delete these files from your SD card.
+
+## Restoring the NAND
+
+1. copy the backed up files and put them into `restore` then `emummc` on the SD card.
+2. when you are in Hekate, you can select "Restore eMMC" under Tools.
+3. then select `eMMC BOOT0 & BOOT1` and `eMMC RAW GPP` to perform the restore.
+
+Translated with DeepL.com (free version)
 
 # Install HB-Store to install apps
 
