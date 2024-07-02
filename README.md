@@ -2,7 +2,7 @@
 
 ## Updates
 - I will add pictures when I have my Switch V1
-- I try to adapt the text as accurately as possible or I will improve it
+- I try to adapt the text as accurately as possible
 
 # SD card preparation
 
