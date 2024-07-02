@@ -56,7 +56,7 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 
 # Prepare and start RCM mode
 
-   1. switch off the Switch by holding down the power button for 3 seconds and selecting "Switch off" under Power options
+   1. turn off the Switch by holding down the power button for 3 seconds and selecting "Power Off" under Power options
    2. slide the RCM Jig into the right Joy-Con slot until it is properly seated
    3. press and hold the volume up button and the power button to activate RCM mode (first press and hold the volume up button and then the power button).
 
@@ -71,8 +71,6 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
    1. download the latest version of Atmosphère CFW from [Atmosphère](https://github.com/Atmosphere-NX/Atmosphere/releases).
    2. unzip the Atmosphère files and drag the files to your SD card
    3. you should now start in the CFW.
-  
-#
 
 # Install HB-Store to install apps
 
