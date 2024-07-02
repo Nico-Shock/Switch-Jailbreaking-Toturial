@@ -3,7 +3,7 @@
 ## Updates
 - I will add pictures when I have my Switch V1
 - I try to adapt the text as accurately as possible
-- 
+
 # What you need
 
 - Nintendo Switch V1
