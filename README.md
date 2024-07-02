@@ -102,6 +102,14 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 7. then go to `Next Step` and then `Start` and confirm everything else to continue. The SD card will be partitioned.
 8. go to `Create emuMMC` again and then to `SD Partition` and select Part 1.
 
+## Always start in RCM mode
+
+1. go back to Tools in Hekate.
+2. then go to the bottom right to something with "Arch Bit - RCM".
+3. and select AutoRCM at the top right.
+
+This way you don't always have to connect the RCM jig and the USB-C cable and reload the payload when you restart the switch, but always start in Hekate.
+
 # Install HB-Store to install apps
 
    1. download the Homebrew App Store [HB-App Store](https://github.com/fortheusers/hb-appstore/releases).
