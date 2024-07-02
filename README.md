@@ -113,7 +113,7 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
 # Install HB-Store to install apps
 
    1. download the Homebrew App Store [HB-App Store](https://github.com/fortheusers/hb-appstore/releases).
-   2. drag the `.nro` file to the /switch folder on the microSD card.
+   2. drag the `.nro` file to the `/switch` folder on the microSD card.
    3. you can start the homebrew via the album or you can also hold down R and start a legitimate game to start homebrew with admin rights and open the HB store.
 
 Translated with DeepL.com (free version)
