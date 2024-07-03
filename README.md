@@ -49,7 +49,6 @@ To format the SD card to FAT32 in MacOS, follow these steps:
 2. unmount the SD card first with `diskutil unmountDisk /dev/disk1` (replace `disk1` with the actual name of the SD card).
 3. then execute the command to format the SD card to FAT32: `diskutil eraseDisk FAT32 namedersdkarte MBRFormat /dev/disk1`.
 
-
 # Check serial number
 
 Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchpatched.com/).
@@ -102,6 +101,12 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 7. then go to `Next Step` and then `Start` and confirm everything else to continue. The SD card will be partitioned.
 8. go to `Create emuMMC` again and then to `SD Partition` and select Part 1.
 
+## If you want to install Linux:
+1. download [Switchroot Ubuntu](https://download.switchroot.org/ubuntu-bionic/) (then select the latest `Switchroot Ubuntu.7z`) and drag the folders `switchroot` and `bootloader` to your SD card.
+
+2. then go to Hekate after formatting your SD card (as in the previous step), and then select "Flash Linux" (you should still be in the formatting step, so you should not have closed the window, otherwise you just reformat everything) to install Linux (your SwitchOS will not be overwritten).
+You can also select "SD UMS" to edit your SD card on the PC without removing it from your Switch.
+
 ## Always start in RCM mode
 
 1. go back to Tools in Hekate.
@@ -110,6 +115,10 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 
 This way you don't always have to connect the RCM jig and the USB-C cable and reload the payload when you restart the switch, but always start in Hekate.
 
+# Loading CFW Atmosphere
+
+1. go to "Launch" in Hekate under Home and select "Atmosphere emuMMC" to boot into it.
+
 # Install HB-Store to install apps
 
    1. turn off your Switch completely.
@@ -117,4 +126,9 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
    3. drag the `.nro` file into the `/switch` folder on the microSD card.
    4. you can start the homebrew from the album or you can also hold R and start a legitimate game to start homebrew with admin rights and open the HB store.
 
-Translated with DeepL.com (free version)
+# IMPORTANT!!!
+
+DO NOT PLAY ONLINE, DOWNLOAD UPDATES OR INTERACT WITH THE NINTENDO SERVERS WHILE YOU ARE IN CFW OR YOU WILL BE BANNED ONLINE OR YOUR CONSOLE WILL BE COMPLETELY BANNED.
+
+PLEASE DO NOT DOWNLOAD ROMS ONLINE AND DO NOT ENGAGE IN PIRACY. BUY ALL GAMES LEGALLY YOURSELF. ALL GAMES THAT I PLAY, I OWN AND HAVE PURCHASED LEGALLY.
+I DO NOT SUPPORT PIRACY AND DO NOT WANT OTHERS TO BE ENCOURAGED TO OWN AND PLAY GAMES ILLEGALLY.
