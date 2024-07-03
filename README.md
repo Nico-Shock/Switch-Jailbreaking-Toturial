@@ -126,7 +126,7 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
    3. drag the `.nro` file into the `/switch` folder on the microSD card.
    4. you can start the homebrew from the album or you can also hold R and start a legitimate game to start homebrew with admin rights and open the HB store.
 
-# IMPORTANT!!!
+# **IMPORTANT!!!**
 
 DO NOT PLAY ONLINE, DOWNLOAD UPDATES OR INTERACT WITH THE NINTENDO SERVERS WHILE YOU ARE IN CFW OR YOU WILL BE BANNED ONLINE OR YOUR CONSOLE WILL BE COMPLETELY BANNED.
 
