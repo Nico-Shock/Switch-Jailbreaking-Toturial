@@ -123,11 +123,13 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
 
    1. turn off your Switch completely.
    2. download the Homebrew App Store [HB-App Store](https://github.com/fortheusers/hb-appstore/releases).
-   3. drag the `.nro` file into the `/switch` folder on the microSD card.
+   3. drag the `.nro` file into the `switch` folder on the microSD card.
    4. you can start the homebrew from the album or you can also hold R and start a legitimate game to start homebrew with admin rights and open the HB store.
 
+# Prevent switch ban (as far as possible)
+
 1. download [switch90dnssetter](https://github.com/suchmememanyskill/switch-90dns-setter/releases) and [switch90dnstester](https://github.com/meganukebmp/Switch_90DNS_tester/releases).
-2. turn off your switch completely and insert your SD card into your PC.
+2. switch off your switch completely and insert your SD card into your PC.
 3. go to the `switch` folder on the SD card and put the files `switch-90dns-setter.nro` and `Switch_90DNS_tester.nro` into it.
 4. then put your SD card back into your Switch and switch it on (you should start in Hekate).
 5. then go to the album in the CFW to open Homebrew and select "90dns setter".
