@@ -126,7 +126,7 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
    3. drag the `.nro` file into the `switch` folder on the microSD card.
    4. you can start the homebrew from the album or you can also hold R and start a legitimate game to start homebrew with admin rights and open the HB store.
 
-# Avoid switch ban ( as good as possible)
+# Avoid switch ban (as good as possible)
 
   1. download [switch90dnssetter](https://github.com/suchmememanyskill/switch-90dns-setter/releases) and [switch90dnstester](https://github.com/meganukebmp/Switch_90DNS_tester/releases).
   2. switch off your switch completely and insert your SD card into your PC.
