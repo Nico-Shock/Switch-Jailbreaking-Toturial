@@ -119,12 +119,10 @@ This way you don't always have to connect the RCM jig and the USB-C cable and re
 
 1. go to "Launch" in Hekate under Home and select "Atmosphere emuMMC" to boot into it.
 
-# Install HB-Store to install apps
+# Load Homebrew
 
-   1. turn off your Switch completely.
-   2. download the Homebrew App Store [HB-App Store](https://github.com/fortheusers/hb-appstore/releases).
-   3. drag the `.nro` file into the `switch` folder on the microSD card.
-   4. you can start the homebrew from the album or you can also hold R and start a legitimate game to start homebrew with admin rights and open the HB store.
+   - You can start Homebrew through the album, or you can hold down R and start a legitime game to launch Homebrew with admin rights and open an app from there.
+   - You can also download and use new apps from the Homebrew App Store.
 
 # Avoid switch ban (as good as possible)
 
