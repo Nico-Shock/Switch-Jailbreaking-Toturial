@@ -41,6 +41,17 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 
 # Configure Hekate
 
+## Partition SD card and create emuMMC
+
+1. select `emuMMC` in Hekate.
+2. then go to `Create emuMMC`.
+3. select `SD Partition`.
+4. then click on Continue and then on OK.
+5. select the bars for 'emuMMC' to Full so that your system is completely copied to it (since CFW runs separately from the normal system).
+6. you can also reserve memory for Android and Linux if you want to install that.
+7. then go to `Next Step` and then `Start` and confirm everything else to continue. The SD card will be partitioned.
+8. go to `Create emuMMC` again and then to `SD Partition` and select Part 1.
+
 ## Backup the NAND
 
 1. close the launch window at the top right after you have set the date
@@ -58,17 +69,6 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 1. copy the backed up files and put them into `restore` then `emummc` on the SD card.
 2. when you are in Hekate, you can select "Restore eMMC" under Tools.
 3. then select `eMMC BOOT0 & BOOT1` and `eMMC RAW GPP` to perform the restore.
-
-## Partition SD card and copy sysMMC to emuMMC
-
-1. select `emuMMC` in Hekate.
-2. then go to `Create emuMMC`.
-3. select `SD Partition`.
-4. then click on Continue and then on OK.
-5. select the bars for 'emuMMC' to Full so that your system is completely copied to it (since CFW runs separately from the normal system).
-6. you can also reserve memory for Android and Linux if you want to install that.
-7. then go to `Next Step` and then `Start` and confirm everything else to continue. The SD card will be partitioned.
-8. go to `Create emuMMC` again and then to `SD Partition` and select Part 1.
 
 ## If you want to install Linux:
 1. download [Switchroot Ubuntu](https://download.switchroot.org/ubuntu-bionic/) (then select the latest `Switchroot Ubuntu.7z`) and drag the folders `switchroot` and `bootloader` to your SD card.
