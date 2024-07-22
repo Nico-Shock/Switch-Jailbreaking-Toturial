@@ -14,40 +14,9 @@
 
 # SD card preparation
 
-## Windows:
-
-To format the SD card to `Fat32`, follow the steps below:
-
-1. right click on the SD card and select `Format`.
-2. select `Fat32` as the file system and click on `Format`. 
-   
-   **Note:** If "Fat32" is not displayed as an option, open the command prompt (cmd) as administrator and execute the following commands:
-
-   ```sh
-   diskpart
-   list disk
-   sel disk 2 // Select the number of the SD card, e.g. disk 2
-   format fs=fat32 quick
-
-
-## Linux:
-
-To format the SD card in Linux, follow these steps:
-
-1. open the terminal and run `lsblk` to get the disk information.
-2. select the SD card by typing `sudo fdisk /dev/disk1` (replace `disk1` with the actual name of the SD card)
-3. execute this command to format the partition to FAT32:
-
-   ```bash
-   sudo mkfs.vfat -F 32 /dev/disk1
-
-## MacOS:
-
-To format the SD card to FAT32 in MacOS, follow these steps:
-
-1. open the terminal and type `diskutil list` to get the info for the disk.
-2. unmount the SD card first with `diskutil unmountDisk /dev/disk1` (replace `disk1` with the actual name of the SD card).
-3. then execute the command to format the SD card to FAT32: `diskutil eraseDisk FAT32 namedersdkarte MBRFormat /dev/disk1`.
+- Insert your SD card into your Switch
+- Go to the system settings and then to "Console"
+- Scroll all the way down to "Formatting Options" and select "Format SD card". Confirm with "Format"
 
 # Check serial number
 
