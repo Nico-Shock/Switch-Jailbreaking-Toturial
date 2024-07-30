@@ -1,5 +1,7 @@
 # Nintendo Switch Jailbreak Tutorial
 
+# *THIS IS ONLY A PURE ENGLISH TRANSLATION; THERE MAY BE ERRORS IN THE TEXT AS A RESULT. THE ORIGINAL TEXT WAS WRITTEN IN GERMAN.*
+
 # What you need
 
 - Nintendo Switch V1
