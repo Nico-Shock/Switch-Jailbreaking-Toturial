@@ -1,4 +1,4 @@
-# Nintendo Switch Jailbreak Totorial
+# Nintendo Switch Jailbreak Tutorial
 
 # What you need
 
