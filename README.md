@@ -10,32 +10,60 @@
 - USB-C cable
 - PC/laptop (or similar to edit data on an SD card)
 
-# SD card preparation
+# SD Card Preparation
 
-- Insert your SD card into your Switch
-- Go to the system settings and then to "Console"
-- Scroll all the way down to "Formatting Options" and select "Format SD card". Confirm with "Format"
+*Important: You should only use Fat32 on a maximum partition size of 64 GB, as you won't be able to write more data to it otherwise. Alternatively, use exFAT, which you can format by right-clicking and selecting "Format" in Windows. On macOS and Linux, simply choose exFAT as the file system in the following steps.*
 
-# Check serial number
+## Windows
 
-Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchpatched.com/).
+1. Download [Fat32 Format](http://ridgecrop.co.uk/index.htm?guiformat.htm).
+2. Run "guiformat.exe".
+3. Select your SD card (e.g., "D:").
+4. If your SD card is 32 GB or larger, select "32768" for "allocated unit size" so that the 3DS can recognize the SD card. (Some SD cards, especially older ones, might still not be recognized if they are larger than 32 GB.)
+
+## MacOS
+
+1. Open "Disk Utility".
+2. Right-click on the SD card and select "Erase". Format it as Fat32 (it may be listed as "MS-DOS (FAT)").
+3. Click "Erase" to proceed.
+
+## Linux
+
+1. Open the "Disk" app.
+2. Select the drive, click on the gear icon or right-click and choose "Format".
+3. Select "Fat32" as the file system type (you may need to go to "Other" or "More" to find Fat32).
+
+# Check Serial Number
+
+Ensure that your Switch can be jailbroken. Use [IsMySwitchPatched](https://ismyswitchpatched.com/).
+
+- You can find your serial number on a sticker under your Switch, which you can enter on the website. If you don't have the serial number there, go to System Settings, then "Console," and then "Serial Number" to view it.
+
+- An unpatched Switch means that you can 100% hack your Switch using this method. If it doesn't work later, you have made a mistake.
+
+- If you have a possibly patched Switch, the payload might work, but it might not. You can tell by checking if you get the "RCM OK" message in TegraRCM and if the Switch stays black when you insert the payload.
+
+- If you have a patched Switch, it will 100% NOT work. You will need a modchip that you solder into the Switch, which involves advanced knowledge and risk. If you install a modchip, you only need an SD card with the data from the "Clean RCM Pack". However, only Switch V1 will work with this data, meaning unpatched Switches. For other models (Switch V2, OLED, or LITE), you will need different data.
 
 # SD Card Setup
 
-1. Download the Clean RCM Pack from [Clean RCM Pack](https://github.com/Nico-Shock/Clean-RCM-Pack/releases/).
-2. Copy all the data to the root directory of the SD card.
+   1. turn off the Switch by holding down the power button for 3 seconds and selecting "Power Off" under Power options
+   2. Download the Clean RCM Pack from [Clean RCM Pack](https://github.com/Nico-Shock/Clean-RCM-Pack/releases/).
+   3. Copy all the data to the root directory of the SD card.
 
 # Prepare and start RCM mode
 
-   1. turn off the Switch by holding down the power button for 3 seconds and selecting "Power Off" under Power options
    2. slide the RCM Jig into the right Joy-Con slot until it is properly seated
    3. press and hold the volume up button and the power button to activate RCM mode (first press and hold the volume up button and then the power button).
 
-# Insert payload
+# Inject Payload
 
-   1. download TegraRcmGUI from [TegraRcmGUI](https://github.com/eliboa/TegraRcmGUI/releases).
-   2. connect the Switch in RCM mode to your PC via the USB-C cable
-   3. open TegraRcmGUI and select the Hekate payload file (it should be a ".bin" file).
+1. Download TegraRcmGUI from [TegraRcmGUI](https://github.com/eliboa/TegraRcmGUI/releases).
+2. Connect the Switch in RCM mode to your PC using the USB-C cable.
+3. Go to "Tools" and select "Install Driver" to install the APX drivers so that your PC can recognize the Switch. (A green field should appear with "RCM OK," indicating that the Switch is successfully in RCM mode and recognized by your PC.)
+4. Open TegraRcmGUI and double-click the file "hekate_ctcaer_5.0.0.bin" (or manually select it and choose "Inject Payload").
+
+You can also enable "Auto Boot at startup," "Minimize to Tray," and "Auto Inject Payload" under "Tools" so that the payload is automatically sent whenever you connect your Switch with the USB-C cable.
 
 # Configure Hekate
 
@@ -68,10 +96,11 @@ Make sure your switch can be jailbroken. [IsMySwitchPatched](https://ismyswitchp
 3. then select `eMMC BOOT0 & BOOT1` and `eMMC RAW GPP` to perform the restore.
 
 ## If you want to install Linux or Android:
-1. Download [Switchroot Ubuntu](https://download.switchroot.org/ubuntu-bionic/) or [Switchroot Android](https://download.switchroot.org/android-11/) (then select the latest `Switchroot Ubuntu.7z` or `Switchroot Android.7z`) and transfer the `switchroot` and `bootloader` folders to your SD card.
 
-2. then go to Hekate after formatting your SD card (as in the previous step), and then select "Flash Linux" (you should still be in the formatting step, so you should not have closed the window, otherwise you just reformat everything) to install Linux (your SwitchOS will not be overwritten).
-You can also select "SD UMS" to edit your SD card on the PC without removing it from your Switch.
+1. Download [Switchroot Ubuntu](https://download.switchroot.org/ubuntu-bionic/) or [Switchroot Android](https://download.switchroot.org/android-11/) (then choose the latest `Switchroot Ubuntu.7z` or `Switchroot Android.7z`) and copy the `switchroot` and `bootloader` folders to your SD card.
+2. In Hekate, after partitioning your SD card, go to "Tools" and select "Partition SD," then choose "Flash Linux" or "Flash Android" (this will flash the files onto the created Linux or Android partition).
+
+If you don't have the partitions yet, back up the data on your SD card and repartition your SD card (partitioning will delete all data except for the bootloader data, or up to 1 GB of data can be backed up).
 
 ## Always start in RCM mode
 
@@ -86,18 +115,19 @@ You can also select "SD UMS" to edit your SD card on the PC without removing it 
 
 # Loading CFW Atmosphere
 
-1. go to "Launch" in Hekate under Home and select "Atmosphere emuMMC" to boot into it.
+1. go to "Launch" in Hekate under Home and select "Atmosphere (EmuNAND)" to boot into it.
 
 # Load Homebrew
 
    - You can start Homebrew through the album, or you can hold down R and start a legitime game to launch Homebrew with admin rights and open an app from there.
    - You can also download and use new apps from the Homebrew App Store.
 
-# Avoid switch ban (as good as possible)
+# Avoid switch bans
 
- 1. Go to the Album in the CFW to open Homebrew and select "90dns setter."
+1. Go to the Album in the CFW to open Homebrew and select "90dns setter."
 2. Press "X" to configure the DNS settings for each network, and select "Y" to restart.
 3. In the Homebrew menu, select "90dns testing utility" and check if the Nintendo services have been blocked.
+4. 4. You can also go to "Console" under System Settings and turn off the "Send Error Reports" option (ideally also in SysNand or Stock Mode).
 
 # **IMPORTANT!!!**
 
