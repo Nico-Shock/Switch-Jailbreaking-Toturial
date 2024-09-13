@@ -1,6 +1,6 @@
 # Nintendo Switch Jailbreak Tutorial
 
-*This is just a pure English translation. Some things might come across as a bit awkward since it was translated with ChatGPT.*
+# *This is just a pure English translation. Some things might come across as a bit awkward since it was translated with ChatGPT.*
 
 # What You Need
 
